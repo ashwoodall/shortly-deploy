@@ -50,7 +50,7 @@ module.exports = function(grunt) {
       },
       build: {
         src: 'public/<%= pkg.name %>.css',
-        dest: 'public/dist<%= pkg.name %>.min.css'
+        dest: 'public/dist/<%= pkg.name %>.min.css'
       }
     },
 

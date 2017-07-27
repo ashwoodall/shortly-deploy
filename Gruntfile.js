@@ -100,11 +100,11 @@ module.exports = function(grunt) {
   ////////////////////////////////////////////////////
 
   grunt.registerTask('test', [
-    'mochaTest'
+    'mochaTest', 'eslint'
   ]);
 
   grunt.registerTask('build', [
-    'eslint', 'concat', 'uglify', 'cssmin'
+    'concat', 'uglify', 'cssmin'
   ]);
 
   grunt.registerTask('upload', function(n) {
@@ -117,7 +117,7 @@ module.exports = function(grunt) {
   });
 
   grunt.registerTask('deploy', [
-    'test', 'build', 'upload'
+    'test', 'upload', 'build'
   ]);
 
 

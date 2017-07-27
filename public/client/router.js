@@ -22,3 +22,5 @@ Shortly.Router = Backbone.Router.extend({
     this.swapView(new Shortly.createLinkView());
   }
 });
+
+//WHAT IS GOING ON?? IS THIS PUSHED?

@@ -76,10 +76,7 @@ module.exports = function(grunt) {
         command: [
           'git add .',
           'git commit -m \'deployment \'',
-          'git push live master',
-          'ssh root@159.203.133.243',
-          'cd shortly-deploy/',
-          'grunt build'
+          'git push live master'
         ].join('&&')
       }
     },
